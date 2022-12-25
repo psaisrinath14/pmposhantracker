@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PM Poshan</title>
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static', filename='styles/main.css') }}">
+    <script src="{{url_for('static', filename='scripts/school/upload_menu.js')}}" defer></script>
+</head>
+<body>
+    <div class = "navbar">
+        <div>
+            <img src = "{{ url_for('static', filename='assets/pmposhan.png') }}" height="45rem">
+            <img src = "{{ url_for('static', filename='assets/govlion.png') }}" height="45rem">
+            <img src = "{{ url_for('static', filename='assets/digitalindia.png') }}" height="45rem">
+        </div>
+
+        <div>
+            <button class = "loginbtn">Logout</button>
+        </div>
+    </div> 
+
+    <div style="text-align:center; margin:16rem 0 14rem">
+        <h1>Upload Attendance</h1><br>
+        <p id = "current_date"></p><br>
+        <form action="/upload_attendance" method="post" target="_self" enctype="multipart/form-data">
+            <label for="adminno">Admission Number:</label>
+            <input type = "number" id = "adminno" name = "adminno" required min="1000">
+            <h1 style="font-size:50px" >
+ <body background="{{ url_for('static', filename='uploads/bg1.jpeg') }}">
+<p ><h1 align="center" style="color:white;">Face and signature classifier</h1></p>
+<div class="container">
+<div class="row">
+
+    <form method="post" action="/" enctype="multipart/form-data">
+        <h2>Upload food item1</h2><br>
+<input type="file" name="file1" class="form-control" autocomplete="off" required
+
+          onchange="loadFile1(event)" /></p>
+          <p><img id="output1" width="200" /></p>
+         <script>
+          var loadFile1 = function(event) {
+            var image1 = document.getElementById('output1');
+            image1.src = URL.createObjectURL(event.target.files[0]);
+          };
+          </script>
+        <h2>Upload food item 2</h2><br>
+<input type="file" name="file2" class="form-control" autocomplete="off" required
+
+          onchange="loadFile2(event)" /></p>
+          <p><img id="output2" width="200" /></p>
+         <script>
+          var loadFile2 = function(event) {
+            var image2= document.getElementById('output2');
+            image2.src = URL.createObjectURL(event.target.files[0]);
+          };
+          </script>
+        <h2>Upload food item 3</h2><br>
+<input type="file" name="file3" class="form-control" autocomplete="off" required
+
+          onchange="loadFile3(event)" /></p>
+          <p><img id="output3" width="200" /></p>
+         <script>
+          var loadFile3 = function(event) {
+            var image3= document.getElementById('output3');
+            image3.src = URL.createObjectURL(event.target.files[0]);
+          };
+          </script>
+
+            <br><br>
+            <button type="reset" class="loginbtn">Reset All Fields</button>
+            <button type="submit" class="loginbtn">Submit</button>
+        </form>
+
+    
+    </div>
+
+
+
+
+
+
+    <div class="dash_footer">
+        <p>Designed and Developed by srinath,akshith and vamshi.contact details:[phone number:8897**8834 email:***@gmail.com  <br> © 2022 National Informatics Centre</p>
+    </div>
+</body>
+</html>

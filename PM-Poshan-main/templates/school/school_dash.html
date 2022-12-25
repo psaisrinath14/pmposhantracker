@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PM Poshan</title>
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static', filename='styles/main.css') }}">
+
+</head> 
+<body>
+    <div class = "navbar">
+        <div>
+            <img src = "{{ url_for('static', filename='assets/pmposhan.png') }}" height="45rem">
+            <img src = "{{ url_for('static', filename='assets/govlion.png') }}" height="45rem">
+            <img src = "{{ url_for('static', filename='assets/digitalindia.png') }}" height="45rem">
+        </div>
+
+        <div>
+            <button class = "loginbtn" onclick="location.href='/'">Logout</button>
+        </div>
+    </div>
+
+    <marquee scrollamount="7">Government School MGR Nagar, Chennai has been selected as the best school based on constant improvement in MDM and attendance. &emsp;&emsp;&emsp;&emsp;&emsp;&emsp; The plate image can be only uploaded from our android application. &emsp;&emsp;&emsp;&emsp;&emsp; Government School MGR Nagar, Chennai has been selected as the best school based on constant improvement in MDM and attendance. &emsp;&emsp;&emsp;&emsp;&emsp;&emsp; The plate image can be only uploaded from our android application.
+    </marquee>
+
+    <div class="schooldetailsdiv">
+        <div class = "schooldetails">
+
+            <div>
+                <br>
+                <h2 style="display:inline-block;">Contact Details&nbsp;</h2>
+                <button onclick="document.getElementById('schoolinput').focus()">✏️</button>
+            </div>
+
+            <br>
+
+            <label>Contact Number: </label>
+            <input type = "number" value="8897008834" id="schoolinput"><br><br>
+
+            <label>School Incharge:</label>
+            <input type = "text" value="Mr.Sharma">
+        </div>
+    </div>
+
+    <div class="school_dash_main">
+        <button class="blue_button" onclick="location.href='/upload_attendance'">Today's Attendance</button>
+        <button class="blue_button" onclick="location.href='/upload_menu'">Update Weekly Menu</button>
+        <button class="blue_button" onclick="location.href='/upload_hdata'">Update Health Data</button><br>
+        <button class="blue_button" onclick="location.href='/reg_student'">Register New Student</button>
+
+
+    </div>
+    <br>
+    <div class="dash_footer">
+        <p>Designed and Developed by srinath,akshith and vamshi.contact details:[phone number:8897**8834 email:***@gmail.com  <br> © 2022 National Informatics Centre</p>
+    </div>
+</body>
+</html>

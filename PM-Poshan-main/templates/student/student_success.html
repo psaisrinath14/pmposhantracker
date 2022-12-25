@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PM Poshan</title>
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static', filename='styles/student.css') }}">
+    <script src="{{url_for('static', filename='scripts/school/upload_menu.js')}}" defer></script>
+    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+</head> 
+<body>
+    <div class = "navbar">
+        <div>
+            <img src = "{{ url_for('static', filename='assets/pmposhan.png') }}" height="45rem">
+            <img src = "{{ url_for('static', filename='assets/govlion.png') }}" height="45rem">
+            <img src = "{{ url_for('static', filename='assets/digitalindia.png') }}" height="45rem">
+        </div>
+        <div style="display:flex;justify-content: space-between;">
+            <div id="google_translate_element" style="margin:1em;"></div>
+            <button class = "loginbtn" onclick="location.href='/'">Logout</button>
+        </div>
+  
+    </div>
+
+    <marquee scrollamount="7">The Cabinet Committee on Economic Affairs (CCEA) chaired by Prime Minister Narendra Modi on September 29, 2021, approved a new meal scheme known as 'Pradhan Mantri Poshan Shakti Nirman' scheme (PM Poshan Scheme) for government and government-aided schools for the next five years (from 2021-22 to 2025-26) with the financial outlay of Rs 1.31 trillion, and the existing 'Mid Day Meal' scheme will also be included in this programme. The central government will bear an additional cost of nearly Rs 45,000 crore on providing subsidised foodgrains from the food ministry over the years amounting to a total outlay of Rs 1.31 trillion. During 2020-21, the Centre invested more than Rs 24,400 crore in the scheme, including nearly Rs 11,500 crore on foodgrains.
+    </marquee>
+
+    <div style="display: flex; align-items: center; flex-direction: column; margin-bottom: 5rem;">
+        <h1 style="color: orange;margin-top: 1em;">Pradhan Mantri Poshan Shakti Nirman (PM POSHAN)</h1>
+        <h1 style="color:#07a8f6;">Student Feedback Form Successfully Submitted</h1>
+    </div>
+    
+    <div style="text-align: center; margin:5rem 0rem 19rem;">
+        <a href = "/student_dash">
+            <button class="loginbtn">Submit New Feedback</button>
+        </a>
+        <br>
+        <a href = "/">
+            <button class="loginbtn">Logout of the Student</button>
+        </a>
+
+    </div>
+    <br>
+    <div class="dash_footer">
+        <p>Designed and Developed by Random Variables. Website content is provided by the Department of Elementary Education (Phone: XXXXX-XXXXX Email : xxxxxxxxxxxx). The content on site is informative and neither the Department nor the NIC is responsible for any in-advertent errors. <br> © 2022 National Informatics Centre</p>
+    </div>
+    
+
+    <script type="text/javascript">
+        function googleTranslateElementInit() {
+        new google.translate.TranslateElement({pageLanguage: 'en', includedLanguages: 'hi,ta,te,kn,en,ml,mr,bn,gu', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
+        }
+    </script>
+</body>
+</html>

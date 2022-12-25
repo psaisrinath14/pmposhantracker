@@ -1,0 +1,144 @@
+*{
+    margin: 0;
+}
+
+.navbar{
+    height: 3rem;
+    background-color: #3fc4ff;
+    padding: 0.5rem 1rem 0.5rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.loginbtn{
+    margin-top: 0.3rem;
+    background-color: #07a8f6;
+    border-radius: 0.7rem;
+    border-style: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+}
+
+.dashbar1{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.blue_button{
+    margin: 0rem 1rem 2rem;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    text-transform:capitalize;
+    font-weight: bold;
+    font-size: 1.5rem;
+    width: 25rem;
+    height: 10rem;
+    background-color: #039be7;
+    box-shadow: 0 3px 5px 1px grey;
+    cursor: pointer;
+    padding: 1rem .3rem;
+    color: white;
+    border-style: none;
+    border-radius: 2rem;
+}
+
+.blue_button:hover{
+    transform: translateY(2px);
+    box-shadow: 0 1px 15px 1px grey;
+}
+
+a, a:hover, a:focus, a:active {
+    text-decoration: none;
+    color: inherit;
+}
+
+.dashbar2{
+    display: flex;
+    margin-top: 2rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.dash_footer{
+    margin-top: 6rem;
+    width: 100%;
+    background-color: #07a8f6;
+    text-align: center;
+    padding: 1rem 0rem;
+    color: white;
+}
+
+.loginfield{
+    background-color: rgb(245, 245, 245);
+    width: 20%;
+    padding: 2rem;
+    border-radius: 3rem;
+}
+
+.school_dash_main{
+    margin: 6rem 2rem 3rem;
+    text-align: center;
+}
+
+.schooldetailsdiv{
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+}
+
+.schooldetails{
+    background-color: rgb(245, 245, 245);
+    width: 40%;
+    border-radius: 3rem;
+    text-align: center;
+    height: 10rem;
+}
+
+.uploadhdata {
+    margin-top: 7rem;
+    text-align: center;
+}
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 95%;
+  }
+  
+  td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+  }
+  
+.star-rating {
+    border:solid 1px #ccc;
+    display:flex;
+    flex-direction: row-reverse;
+    font-size:1.5em;
+    justify-content:space-around;
+    padding:0 .2em;
+    text-align:center;
+    width:5em;
+  }
+  
+  .star-rating input {
+    display:none;
+  }
+  
+  .star-rating label {
+    color:#ccc;
+    cursor:pointer;
+  }
+  
+  .star-rating :checked ~ label {
+    color:#f90;
+  }
+  
+  .star-rating label:hover,
+  .star-rating label:hover ~ label {
+    color:#fc0;
+  }
+  

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PM Poshan</title>
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static', filename='styles/student.css') }}">
+    <script src="{{url_for('static', filename='scripts/school/upload_menu.js')}}" defer></script>
+    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+</head> 
+<body>
+    <div class = "navbar">
+        <div>
+            <img src = "{{ url_for('static', filename='assets/pmposhan.png') }}" height="45rem">
+            <img src = "{{ url_for('static', filename='assets/govlion.png') }}" height="45rem">
+            <img src = "{{ url_for('static', filename='assets/digitalindia.png') }}" height="45rem">
+        </div>
+        <div style="display:flex;justify-content: space-between;">
+            <div id="google_translate_element" style="margin:1em;"></div>
+            <button class = "loginbtn" onclick="location.href='/'">Logout</button>
+        </div>
+  
+    </div>
+
+    <marquee scrollamount="7">The Cabinet Committee on Economic Affairs (CCEA) chaired by Prime Minister Narendra Modi on September 29, 2021, approved a new meal scheme known as 'Pradhan Mantri Poshan Shakti Nirman' scheme (PM Poshan Scheme) for government and government-aided schools for the next five years (from 2021-22 to 2025-26) with the financial outlay of Rs 1.31 trillion, and the existing 'Mid Day Meal' scheme will also be included in this programme. The central government will bear an additional cost of nearly Rs 45,000 crore on providing subsidised foodgrains from the food ministry over the years amounting to a total outlay of Rs 1.31 trillion. During 2020-21, the Centre invested more than Rs 24,400 crore in the scheme, including nearly Rs 11,500 crore on foodgrains.
+    </marquee>
+
+    <div style="display: flex; align-items: center; flex-direction: column; margin-bottom: 5rem;">
+        <h1 style="color: orange;margin-top: 1em;">Pradhan Mantri Poshan Shakti Nirman (PM POSHAN)</h1>
+        <h1 style="color:#07a8f6;">Student Feedback Form</h1>
+    
+<form action="/student_dash" method="post" target="_self">
+        <div style="text-align:left;background-color: rgb(243, 243, 243);padding: 3rem;border-radius: 2rem;margin-top: 2rem;">
+        <div style="width:30em;margin-top: 1em;">
+            <h2>How was your food today?</h2>
+            <p id = "current_date"></p><br>
+        </div>
+        
+        <div class="star-rating" style="background-color: white;">
+
+            <input type="radio" id="5-stars" name="rating" value="5" />
+            <label for="5-stars" class="star">&#9733;</label>
+            <input type="radio" id="4-stars" name="rating" value="4" />
+            <label for="4-stars" class="star">&#9733;</label>
+            <input type="radio" id="3-stars" name="rating" value="3" />
+            <label for="3-stars" class="star">&#9733;</label>
+            <input type="radio" id="2-stars" name="rating" value="2" />
+            <label for="2-stars" class="star">&#9733;</label>
+            <input type="radio" id="1-star" name="rating" value="1" />
+            <label for="1-star" class="star">&#9733;</label>
+        
+        </div>
+    <div >
+        <br><h2>What did you eat today?</h2><br>
+        <input type="text" style="width:30em;">
+    </div>
+
+    <div>
+        <br><h2>General Feedback</h2><br>
+        <input type="text" style="width:30em;height: 5em;">
+    </div>
+
+    <br>
+    <input type="submit" value="Submit Feedback" class="loginbtn">
+    </div>
+    
+    </div>
+</form>
+    <div class="dash_footer">
+        <p>Designed and Developed by Random Variables. Website content is provided by the Department of Elementary Education (Phone: XXXXX-XXXXX Email : xxxxxxxxxxxx). The content on site is informative and neither the Department nor the NIC is responsible for any in-advertent errors. <br> © 2022 National Informatics Centre</p>
+    </div>
+
+    <script type="text/javascript">
+        function googleTranslateElementInit() {
+        new google.translate.TranslateElement({pageLanguage: 'en', includedLanguages: 'hi,ta,te,kn,en,ml,mr,bn,gu', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
+        }
+    </script>
+</body>
+</html>

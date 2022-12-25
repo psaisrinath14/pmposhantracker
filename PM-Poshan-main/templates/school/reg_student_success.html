@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PM Poshan</title>
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static', filename='styles/main.css') }}">
+
+</head> 
+<body>
+    <div class = "navbar">
+        <div>
+            <img src = "{{ url_for('static', filename='assets/pmposhan.png') }}" height="45rem">
+            <img src = "{{ url_for('static', filename='assets/govlion.png') }}" height="45rem">
+            <img src = "{{ url_for('static', filename='assets/digitalindia.png') }}" height="45rem">
+        </div>
+
+        <div>
+            <button class = "loginbtn">Logout</button>
+        </div>
+    </div>
+    <div style="text-align: center; margin:18rem 0 16rem">
+    <h1>Student Added Successfully!</h1>
+
+    <a href = "/school_dash">
+        <button class="loginbtn">Home</button>
+    </a>
+
+    <a href = "/reg_student">
+        <button class="loginbtn">Register New Student</button>
+    </a>
+    </div>
+
+    <div class="dash_footer">
+        <p>Designed and Developed by Random Variables. Website content is provided by the Department of Elementary Education (Phone: XXXXX-XXXXX Email : xxxxxxxxxxxx). The content on site is informative and neither the Department nor the NIC is responsible for any in-advertent errors. <br> © 2022 National Informatics Centre</p>
+    </div>
+</body>
+</html>
